@@ -30,6 +30,8 @@ If successful, your terminal should now look like this, except with your specifi
 
 You're now connected to a computer in the CSE basement, and any commands will run on that computer.
 
+Some interesting things to note about this step. First of all, every time you connect you will be assigned the ending 201, 202, or 203 after ieng6. This doesn't matter for the rest of the steps in this tutorial, but an example of where this should be noted is if you're running a server, which would change the URL. Another interesting thing you might notice when connecting is that you are given the "cluster status", which lets you know exactly how many people are currently remotely connected to ieng6.
+
 ## Step 3: Trying Some Commands
 
 You're now done connecting, here are some (but certainly not all) commands you can try to better understand the difference between your computer and the remote computer: 
@@ -46,3 +48,7 @@ Here's an example of how running some of these commands on the remote computer c
 ![image](https://user-images.githubusercontent.com/122496496/211948145-538f62a8-47a7-485c-98e6-fb57e10f9592.png)
 
 To log out of the remote server use _Ctrl-D_ or run the `exit` command. 
+
+To conclude with some interesting things you might notice with running the commands: 
+1. As you can see in the image above, going back once from the home directory and running ls gives you a list of all the active cse15lwi23 accounts. You can cd into them and run commands like ls, but you will not be able to edit anyone else's files.
+2. (Not shown in image) You cannot access any of your local files while on the remote computer. Even though you are still using the same device, no changes, files, folders etc. are shared between the remote and local computers.
