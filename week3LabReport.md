@@ -24,7 +24,7 @@ The method breaks down the path in the URL (which is automatically given as a pa
 
 In image 3, you can see the same `handleRequest` method being called same as in image 2. The only difference is that the `output` variable already contains the string "Apple \n" instead of being empty. Since the main method wasn't ran again since the server is already running on the same port, a new `Handler` object isn't created, so `output` is maintained. However since the page was reloaded due to the URL changing, the `handleRequest` method is ran. It follows the same rules as described before, but this time adds the string "Banana \n" to `output`. Therefore now `output` equals "Apple \n Banana \n", which results in Apple and Banana being printed on the screen on separate lines.
 
-## Part 2: Inputs, Symptoms, and Bugs**
+## Part 2: Inputs, Symptoms, and Bugs
 
 Here's a code sample that's intended to reverse an array by returning a new array with all the elements of the original in the reversed order without altering the original array:
 
